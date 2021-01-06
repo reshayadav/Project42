@@ -1,15 +1,22 @@
-class Umbrella {
+// class Umbrella {
 
-    constructor(x,y){
+//     constructor(x,y,r){
 
-        this.body = Bodies.circle(x,y,80,{static:true});
-        World .add(world, this.body);
-        this.image = loadImage("images/WalkingFrame/walking_1.png");
-    }
+//         var options ={
+//             isStatic : true
+//         }
 
-    display(){
-        
-     imageMode (CENTER);
-     image(this.image,x,y,50,70);
-    }
-}
+//     this.r = r;
+//     this.body = Bodies.circle(x,y,r,options);
+//     this.image = loadImage("images/WalkingFrame/walking_1.png");
+//     World.add(world,this.body);
+
+// }
+
+// display(){
+//  var mangopos = this.body.position; 
+//     imageMode (CENTER);
+//     image (this.image,mangopos.x,mangopos.y,40,40);
+
+// }
+// }

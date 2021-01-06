@@ -11,9 +11,9 @@ class Drop{
 
         push ();
         
-        fill (255)
+        fill (13,114,217)
         ellipseMode(RADIUS);
-        ellipse(pos.x,pos.y,10,10);
+        ellipse(pos.x,pos.y,3,3);
         pop ();
     }
 }
