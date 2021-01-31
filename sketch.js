@@ -18,9 +18,9 @@ world = engine.world;
 
 umbrella = new Umbrella(250,475,300,300);
 
-for(var i=0; i<MaxDrops; i++){
-    drops.push(new Drop(random(0,400), random(0,400)))
-}
+// for(var i=0; i<MaxDrops; i++){
+//     drops.push(new Drop(random(0,400), random(0,400)))
+// }
 
 Engine.run(engine);
 }
