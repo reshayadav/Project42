@@ -30,9 +30,9 @@ function draw(){
   
  umbrella.display();
 
- for(var i = 0; i<maxDrops; i++){
-    drops[i].display();
-  }
+//  for(var i = 0; i<maxDrops; i++){
+//     drops[i].display();
+//   }
 
  
 drawSprites();
