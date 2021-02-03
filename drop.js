@@ -14,11 +14,17 @@ class Drop{
         var angle = this.body.angle;
 
         push ();
-        rotate (angle);
         translate (pos.x,pos.y);
+        rotate (angle);
         ellipseMode(RADIUS);
         ellipse(x,y,5,5);
         pop ();
 
+    }
+
+    update(){
+        if(this.rain.position.y < 10){
+            Matter.Body.setPosition(this.body, {x:random(0,400), y:random(0,400)})
+        }
     }
 }
