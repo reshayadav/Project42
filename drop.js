@@ -4,6 +4,10 @@ class Drop{
         var options={
          friction: 0.1
         }
+
+        this.x =x;
+        this.y =y;
+        this.r =r;
         this.body = Bodies.circle(x,y,r,options);
         World.add(world,this.body);
 
@@ -17,7 +21,7 @@ class Drop{
         translate (pos.x,pos.y);
         rotate (angle);
         ellipseMode(RADIUS);
-        ellipse(x,y,5,5);
+        ellipse(pos.x,pos.y, this.r);
         pop ();
 
     }
