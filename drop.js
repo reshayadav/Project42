@@ -20,6 +20,7 @@ class Drop{
         push ();
         translate (pos.x,pos.y);
         rotate (angle);
+        fill ('blue');
         ellipseMode(RADIUS);
         ellipse(pos.x,pos.y, this.r);
         pop ();
@@ -27,7 +28,7 @@ class Drop{
     }
 
     update(){
-        if(this.rain.position.y < 10){
+        if(this.body.position.y < 660){
             Matter.Body.setPosition(this.body, {x:random(0,400), y:random(0,400)})
         }
     }
