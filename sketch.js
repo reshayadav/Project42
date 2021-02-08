@@ -4,6 +4,7 @@ const Body = Matter.Body;
 const Bodies = Matter.Bodies;
 var thunderGroup , thunder1, thunder2, thunder3, thunder4;
 var thunderCreatedFrame  = 0;
+var thunder;
 var MaxDrops=100;
 var drops=[];
 var umbrella;
@@ -47,7 +48,7 @@ function draw(){
   }
 
   if(frameCount %80 === 0){
-    var thunder = createSprite(250,100,20,20);
+    thunder = createSprite(250,100,20,20);
     thunderCreatedFrame = frameCount;
     var rand = Math.round(random(1,4));
     switch(rand){
