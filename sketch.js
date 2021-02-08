@@ -48,7 +48,7 @@ function draw(){
 
   if(frameCount %80 === 0){
     var thunder = createSprite(250,100,20,20);
-
+    thunderCreatedFrame = frameCount;
     var rand = Math.round(random(1,4));
     switch(rand){
       case 1: thunder.addImage(thunder1);
@@ -63,11 +63,10 @@ function draw(){
 
     }
 
-    thunder.scale = 0.5;
+    thunder.scale = 0.4;
     thunderGroup.add(thunder);
-
   }
-
+   
   if(thunderCreatedFrame + 10 ===frameCount && thunder){
     thunder.destroy();
 }
